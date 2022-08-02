@@ -1,86 +1,42 @@
-# ACE-ToolingTemplate
+# Azure Availability Set
 
-Template repository for management of ACE code. This repo should be used as the framework for maintaining ACE code that is not a part of the Launchpad stack
+Availability Set Deployment
 
 ## Description
 
-- Terraform Version:
-- Cloud(s) supported:{Government/Commercial}
-- Product Version/License:
-- FedRAMP Compliance Support: {}
-- DoD Compliance Support:{IL4/5}
-- Misc Framework Support:
-- Launchpad validated version:
+This module manages an Azure Availability Set.
 
-## Setup and usage
+## Resource List
 
-Describes what changes are needed to leverage this code. Likely should have several sub headings including items as
+- Availability Set
 
-- process/structure for code modifications in the version of Launchpad listed above
-- modules/output/variable updates
-- removal of existing LP technology
+## Inputs
 
-### Code Location
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:-----:|
+| availability_set_name | Name of the Availability Set | string | N/A | yes |
+| location | The Azure location/region to create resources in | string | N/A | yes |
+| resource_group_name | Azure Resource Group resource will be deployed in | string | N/A | yes |
+| regional_tags | Regional level tags | map(string) | {} | yes |
+| global_tags | Global level tags | map(string) | {} | yes |
+| availability_set_tags | Key/Value tags that should be added to the Availability Set | map(string) | {} | no |
 
-Code should be stored in terraform/app/code
+## Outputs
 
-### Code updates
+| Name | Description |
+|------|-------------|
+| availability_set_id | The ID of the Availability Set |
 
-Ensure that vars zyx are in regional/global vars
+## Usage
 
-## Issues
+```hcl
+module "avd_availability_set" {
+  source = "../../../../modules/azurerm-availability-set"
 
-Bug fixes and enhancements are managed, tracked, and discussed through the GitHub issues on this repository.
-
-Issues should be flagged appropriately.
-
-- Bug
-- Enhancement
-- Documentation
-- Code
-
-### Bugs
-
-Bugs are problems that exist with the technology or code that occur when expected behavior does not match implementation.
-For example, spelling mistakes on a dashboard.
-
-Use the Bug fix template to describe the issue and expected behaviors.
-
-### Enhancements
-
-Updates and changes to the code to support additional functionality, new features or improve engineering or operations usage of the technology.
-For example, adding a new widget to a dashboard to report on failed backups is enhancement.
-
-Use the Enhancement issue template to request enhancements to the codebase. Enhancements should be improvements that are applicable to wide variety of clients and projects. One of updates for a specific project should be handled locally. If you are unsure if something qualifies for an enhancement contact the repository code owner.
-
-### Pull Requests
-
-Code updates ideally are limited in scope to address one enhancement or bug fix per PR. The associated PR should be linked to the relevant issue.
-
-### Code Owners
-
-- Primary Code owner: Douglas Francis (@douglas-f)
-- Backup Code owner: James Westbrook (@i-ate-a-vm)
-
-The responsibility of the code owners is to approve and Merge PR's on the repository, and generally manage and direct issue discussions.
-
-## Repository Settings
-
-Settings that should be applied to repos
-
-### Branch Protection
-
-#### main Branch
-
-- Require a pull request before merging
-- Require Approvals
-- Dismiss stale pull requests approvals when new commits are pushed
-- Require review from Code Owners
-
-#### other branches
-
-- add as needed
-
-### GitHub Actions
-
-Future state. There are current inatitives for running CI/CD tooling as GitHub actions.
+  availability_set_name = "${local.resource_prefix}-avd-as"
+  location              = var.location
+  resource_group_name   = data.terraform_remote_state.setup.outputs.management_rg_name
+  regional_tags         = var.regional_tags
+  global_tags           = var.global_tags
+}
+```
