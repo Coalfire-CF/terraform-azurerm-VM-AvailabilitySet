@@ -6,6 +6,8 @@ Availability Set Deployment
 
 This module manages an Azure Availability Set.
 
+Note, this is for the availability set only. The VMs that are deployed into the availability set are managed by the Windows/Linux VM modules.
+
 ## Resource List
 
 - Availability Set
@@ -31,7 +33,7 @@ This module manages an Azure Availability Set.
 
 ```hcl
 module "avd_availability_set" {
-  source = "../../../../modules/azurerm-availability-set"
+  source = "../../../../modules/azurerm-availability-set" github.com/Coalfire-CF/ACE-Azure-VM-AvailabilitySet?ref=v1.0.0"
 
   availability_set_name = "${local.resource_prefix}-avd-as"
   location              = var.location
