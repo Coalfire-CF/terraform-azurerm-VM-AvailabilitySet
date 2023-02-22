@@ -33,7 +33,7 @@ Note, this is for the availability set only. The VMs that are deployed into the 
 
 ```hcl
 module "avd_availability_set" {
-  source = "../../../../modules/azurerm-availability-set" github.com/Coalfire-CF/ACE-Azure-VM-AvailabilitySet?ref=v1.0.0"
+  source = "github.com/Coalfire-CF/ACE-Azure-VM-AvailabilitySet?ref=v1.0.0"
 
   availability_set_name = "${local.resource_prefix}-avd-as"
   location              = var.location
