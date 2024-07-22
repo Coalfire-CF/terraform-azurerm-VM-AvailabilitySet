@@ -12,23 +12,6 @@ Note, this is for the availability set only. The VMs that are deployed into the 
 
 - Availability Set
 
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| availability_set_name | Name of the Availability Set | string | N/A | yes |
-| location | The Azure location/region to create resources in | string | N/A | yes |
-| resource_group_name | Azure Resource Group resource will be deployed in | string | N/A | yes |
-| regional_tags | Regional level tags | map(string) | {} | yes |
-| global_tags | Global level tags | map(string) | {} | yes |
-| availability_set_tags | Key/Value tags that should be added to the Availability Set | map(string) | {} | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| availability_set_id | The ID of the Availability Set |
-
 ## Usage
 
 ```hcl
