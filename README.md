@@ -16,6 +16,8 @@ Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
 - Security Core
 - Region Setup
+- Networking
+- VM Module
 
 ## Resource List
 
