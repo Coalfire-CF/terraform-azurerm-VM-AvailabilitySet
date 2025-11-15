@@ -92,6 +92,7 @@ No modules.
 ## Tree
 ```
 .
+|-- CHANGELOG.md
 |-- CONTRIBUTING.md
 |-- LICENSE
 |-- License.md
@@ -100,6 +101,5 @@ No modules.
 |-- main.tf
 |-- outputs.tf
 |-- release-please-config.json
-|-- update-readme-tree.sh
 |-- variables.tf
 ```
