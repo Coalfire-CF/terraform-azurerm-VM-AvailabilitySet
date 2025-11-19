@@ -100,6 +100,5 @@ No modules.
 |-- main.tf
 |-- outputs.tf
 |-- release-please-config.json
-|-- update-readme-tree.sh
 |-- variables.tf
 ```
