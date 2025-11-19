@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.0...v0.1.1) (2025-11-19)
+
+
+### Miscellaneous
+
+* remove obsolete update-readme-tree.sh script ([45bac84](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/45bac846c327d6ef6829e37e3b5fa5d3d029b538))
+* remove obsolete update-readme-tree.sh script ([fd27a5e](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/fd27a5e39106b18501290d82b41f6c67dd6138c6))
+* remove old LICENSE file ([5efabe4](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/5efabe41ca2d10b5acf3461a63625c47f34b3ac9))
+* remove old LICENSE file ([2032dac](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/2032dac634fd304c2edf1c1c1b277d867b7dca45))
+* update README tree ([88ce338](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/88ce3381747c302c0066544e29c4de43f0117957))
+* update README tree ([334dd82](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/334dd829919b5c69416d679943acd578ebc86914))
+
 ## [0.1.0](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.0.4...v0.1.0) (2025-11-07)
 
 
