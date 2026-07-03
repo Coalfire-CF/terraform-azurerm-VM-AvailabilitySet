@@ -90,7 +90,7 @@ No modules.
 <!-- END_TF_DOCS -->
 
 ## Tree
-```
+```text
 .
 |-- CHANGELOG.md
 |-- CONTRIBUTING.md
