@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.1.2](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.1...v0.1.2) (2026-07-06)
+
+
+### Bug Fixes
+
+* **ci:** remove retired org-checkov caller (Checkov retired org-wide — ADR-0017, Actions[#130](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/130)) ([#103](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/103)) ([1fa5b6c](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/1fa5b6ce34274c65d540ba66c1586089c6c8046e))
+
+
+### Miscellaneous
+
+* **ci:** re-pin org workflows to Actions v0.8.1 + dependabot auto-merge ([#105](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/105)) ([ac18915](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/ac189153a48802cad8144a16a8f5c65653961ab3))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot-auto-merge.yml ([#109](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/109)) ([1f2b30c](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/1f2b30c945d3fc4ac31ab43c35800b105051fe96))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot-auto-merge.yml ([#111](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/111)) ([84505ea](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/84505ea68fec4fe3776508b9c74f928a44b819fd))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([#106](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/106)) ([e960c5a](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/e960c5acbc79fa5c70f6b02fe533b3e382a81613))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([#108](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/108)) ([ea8e0f8](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/ea8e0f897fdedb3bc310bf67ee47480e7725acd5))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([#114](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/114)) ([a2686c3](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/a2686c3040230e866ee8ca5de40f361f8464190c))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml ([#115](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/115)) ([ae98d2e](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/ae98d2e53235c051f4497d59f778e10a3315181c))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([#110](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/110)) ([ce41e21](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/ce41e21adfd1d72eb4f31c53460b04ef97fa8983))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([#113](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/113)) ([bc6b44d](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/bc6b44d8be1698717c16f43df137380992833f35))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([#112](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/112)) ([cd0df5f](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/cd0df5ff585657d848527239ed13f56dbd477ea8))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml from 0.8.1 to 0.8.2 ([#107](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/107)) ([799bf8a](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/799bf8a7e06c00304d2cff650647c98150a0e103))
+
 ## [0.1.1](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.0...v0.1.1) (2026-04-27)
 
 
