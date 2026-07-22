@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.3](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.2...v0.1.3) (2026-07-22)
+
+
+### Miscellaneous
+
+* adopt Actions v0.12.1 (bypass auto-merge + event-driven re-merge) ([4662b5f](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/4662b5f7c818362eeb3b24e36c4b3b3c6df6f1d9))
+* **ci:** adopt Coalfire-CF/Actions v0.11.3 ([#121](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/121)) ([8321378](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/832137893166a0768bc2449d0bbaa4537fdc24ef))
+* **deps:** bump the org-actions group with 8 updates ([#123](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/123)) ([e4a923d](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/e4a923d63585b69ebd3f3a74b5acd950640c2083))
+* **deps:** bump the org-actions group with 8 updates ([#124](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/124)) ([365821c](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/365821c8c804e562f6482f9e066e945796c0e662))
+
 ## [0.1.2](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.1...v0.1.2) (2026-07-06)
 
 
