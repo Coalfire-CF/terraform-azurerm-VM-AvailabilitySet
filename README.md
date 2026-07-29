@@ -88,18 +88,3 @@ No modules.
 |------|-------------|
 | <a name="output_availability_set_id"></a> [availability\_set\_id](#output\_availability\_set\_id) | The resource id of the Availability Set |
 <!-- END_TF_DOCS -->
-
-## Tree
-
-```text
-.
-|-- CHANGELOG.md
-|-- CONTRIBUTING.md
-|-- LICENSE
-|-- README.md
-|-- coalfire_logo.png
-|-- main.tf
-|-- outputs.tf
-|-- release-please-config.json
-|-- variables.tf
-```
