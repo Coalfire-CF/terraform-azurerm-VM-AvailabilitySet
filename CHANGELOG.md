@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.3](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.2...v0.1.3) (2026-08-20)
+
+
+### Miscellaneous
+
+* adopt Actions v0.12.1 (bypass auto-merge + event-driven re-merge) ([4662b5f](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/4662b5f7c818362eeb3b24e36c4b3b3c6df6f1d9))
+* **ci:** adopt Coalfire-CF/Actions v0.11.3 ([#121](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/121)) ([8321378](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/832137893166a0768bc2449d0bbaa4537fdc24ef))
+* **deps:** bump the org-actions group across 1 directory with 6 updates ([#132](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/132)) ([cae18be](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/cae18be842f983d53f2709a36584cb67b7169d0f))
+* **deps:** bump the org-actions group with 7 updates ([#128](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/128)) ([9f01aca](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/9f01aca4bc8c63392a6f6a0b601712f6cf75dd24))
+* **deps:** bump the org-actions group with 8 updates ([#123](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/123)) ([e4a923d](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/e4a923d63585b69ebd3f3a74b5acd950640c2083))
+* **deps:** bump the org-actions group with 8 updates ([#124](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/124)) ([365821c](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/365821c8c804e562f6482f9e066e945796c0e662))
+* **deps:** bump the org-actions group with 8 updates ([#125](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/125)) ([56ed3e1](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/56ed3e16861e0d15cbb5bf8c3ce6827d34f99b53))
+* **docs:** generate README from _header.md and _footer.md ([#131](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/131)) ([40c50cc](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/40c50cc86ca3e27bb450a3800420b4e3a6aed69f))
+* refresh PR template ([#130](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/130)) ([b24b8a2](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/b24b8a260962ddafe7294048c88e2bcdc10ecf49))
+* retire org-tree-readme ([#126](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/126)) ([1e24419](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/1e244192aed33f8468441d8955e4674eb851d04b))
+
 ## [0.1.2](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.1...v0.1.2) (2026-07-06)
 
 
