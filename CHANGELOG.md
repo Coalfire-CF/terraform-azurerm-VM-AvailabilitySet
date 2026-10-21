@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.0](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.3...v0.2.0) (2026-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* availability_set_tags is renamed to tags. The module now requires Terraform >= 1.16.6, < 2.0 and azurerm ~> 5.10.
+
+### Features
+
+* require Terraform 1.16.6 and azurerm 5.10 ([#140](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/140)) ([1a06582](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/1a0658201e4d900dcf051bf6e2b04203ec1aa57c))
+
+
+### Miscellaneous
+
+* **deps:** bump the org-actions group with 7 updates ([#138](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/138)) ([28fdd38](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/28fdd383b49898fb1519e61d1a177ab5acd03217))
+
 ## [0.1.3](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.2...v0.1.3) (2026-10-20)
 
 
