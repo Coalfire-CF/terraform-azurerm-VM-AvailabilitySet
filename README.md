@@ -14,12 +14,15 @@ This module is used in the [Coalfire-Azure-RAMPpak](https://github.com/Coalfire-
 
 Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
-## Dependencies
+## Provider configuration
 
-- Security Core
-- Region Setup
-- Networking
-- VM Module
+This module has no provider block. The caller configures the `azurerm` provider. For Azure Government, set `environment = "usgovernment"`.
+
+## Defaults
+
+- 2 update domains and 2 fault domains. These are fixed.
+- `managed` (aligned) uses the provider default.
+- Availability sets have no zone setting and no diagnostic settings.
 
 ## Resource List
 
@@ -27,41 +30,35 @@ Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
 ## Usage
 
-This module can be called as outlined below.
-
-- Create a `local` folder under `terraform/azure`.
-- Create a `main.tf` file in the `local` folder.
-- Copy the code below into `main.tf`.
-- From the `terraform/azure/local` directory run `terraform init`.
-- Run `terraform plan` to review the resources being created.
-- If everything looks correct in the plan output, run `terraform apply`.
-
 ```hcl
-provider "azurerm" {
-  features {}
-}
+module "availability_set" {
+  source = "git::https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet?ref=v0.2.0"
 
-module "avd_availability_set" {
-  source = "github.com/Coalfire-CF/ACE-Azure-VM-AvailabilitySet?ref=v1.0.0"
-
-  availability_set_name = "${local.resource_prefix}-avd-as"
+  availability_set_name = "app-avset"
   location              = var.location
-  resource_group_name   = data.terraform_remote_state.setup.outputs.management_rg_name
-  regional_tags         = var.regional_tags
-  global_tags           = var.global_tags
+  resource_group_name   = azurerm_resource_group.app.name
+
+  tags = {
+    Function = "app"
+  }
+  regional_tags = var.regional_tags
+  global_tags   = var.global_tags
 }
 ```
 
 <!-- markdownlint-disable MD033 MD034 MD060 -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.16.6, < 2.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 5.10 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 5.10 |
 
 ## Modules
 
@@ -78,11 +75,11 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_availability_set_name"></a> [availability\_set\_name](#input\_availability\_set\_name) | Name of the Availability Set | `string` | n/a | yes |
-| <a name="input_availability_set_tags"></a> [availability\_set\_tags](#input\_availability\_set\_tags) | Key/Value tags that should be added to the Availability Set | `map(string)` | `{}` | no |
-| <a name="input_global_tags"></a> [global\_tags](#input\_global\_tags) | Global level tags | `map(string)` | n/a | yes |
+| <a name="input_global_tags"></a> [global\_tags](#input\_global\_tags) | Global level tags | `map(string)` | `{}` | no |
 | <a name="input_location"></a> [location](#input\_location) | Azure region for resource deployment | `string` | n/a | yes |
-| <a name="input_regional_tags"></a> [regional\_tags](#input\_regional\_tags) | Regional level tags | `map(string)` | n/a | yes |
+| <a name="input_regional_tags"></a> [regional\_tags](#input\_regional\_tags) | Regional level tags | `map(string)` | `{}` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Azure Resource Group resource will be deployed in | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags for the Availability Set, merged with regional\_tags and global\_tags. | `map(string)` | `{}` | no |
 
 ## Outputs
 
