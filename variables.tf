@@ -13,18 +13,20 @@ variable "resource_group_name" {
   description = "Azure Resource Group resource will be deployed in"
 }
 
-variable "availability_set_tags" {
+variable "tags" {
   type        = map(string)
-  description = "Key/Value tags that should be added to the Availability Set"
+  description = "Tags for the Availability Set, merged with regional_tags and global_tags."
   default     = {}
 }
 
 variable "regional_tags" {
   type        = map(string)
   description = "Regional level tags"
+  default     = {}
 }
 
 variable "global_tags" {
   type        = map(string)
   description = "Global level tags"
+  default     = {}
 }
