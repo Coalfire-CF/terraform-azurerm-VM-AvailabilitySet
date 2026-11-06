@@ -18,8 +18,8 @@ Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
 ## Provider configuration
 
-This module has no provider block. The caller configures the `azurerm` provider. For Azure Government, set `environment
-= "usgovernment"`.
+This module has no provider block. The caller configures the `azurerm` provider. For Azure Government, set
+`environment = "usgovernment"`.
 
 ## Defaults
 
