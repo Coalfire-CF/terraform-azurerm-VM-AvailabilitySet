@@ -8,15 +8,18 @@
 
 This module manages an Azure Availability Set.
 
-Note, this is for the availability set only. The VMs that are deployed into the availability set are managed by the Windows/Linux VM modules.
+Note, this is for the availability set only. The VMs that are deployed into the availability set are managed by the
+Windows/Linux VM modules.
 
-This module is used in the [Coalfire-Azure-RAMPpak](https://github.com/Coalfire-CF/Coalfire-Azure-RAMPpak) FedRAMP Framework.
+This module is used in the [Coalfire-Azure-RAMPpak](https://github.com/Coalfire-CF/Coalfire-Azure-RAMPpak) FedRAMP
+Framework.
 
 Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
 ## Provider configuration
 
-This module has no provider block. The caller configures the `azurerm` provider. For Azure Government, set `environment = "usgovernment"`.
+This module has no provider block. The caller configures the `azurerm` provider. For Azure Government, set `environment
+= "usgovernment"`.
 
 ## Defaults
 
