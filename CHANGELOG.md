@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.2.0...v0.2.1) (2026-11-06)
+
+
+### Documentation
+
+* wrap Markdown lines at 120 characters (Coalfire-CF/Actions[#375](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/375)) ([#141](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/issues/141)) ([de6867f](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/commit/de6867f266fc4b91f0ae24b0e3f7f40a68cf620a))
+
 ## [0.2.0](https://github.com/Coalfire-CF/terraform-azurerm-VM-AvailabilitySet/compare/v0.1.3...v0.2.0) (2026-10-21)
 
 
